@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Пачков Данила Сергеевич — Полное резюме с подтверждениями</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap"></noscript>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1a1a;
+    --paper: #f5f0e8;
+    --accent: #8b3a2a;
+    --muted: #6b6355;
+    --rule: #c8bfaa;
+    --tag-bg: #e8e0cc;
+    --highlight: #fff8e6;
+    --verify: #2d5016;
+    --verify-bg: #e8f5e0;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    background-size: 200px;
+  }
+
+  .wrapper {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+    animation: fadeIn 0.8s ease both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── VERIFICATION BADGE ── */
+  .verify-badge {
+    display: inline-block;
+    background: var(--verify-bg);
+    border: 1px solid var(--verify);
+    color: var(--verify);
+    padding: 12px 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .verify-badge::before {
+    content: '✓ ';
+    font-weight: 700;
+  }
+
+  /* ── HEADER ── */
+  header {
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 36px 0 32px;
+    margin-bottom: 40px;
+  }
+
+  .header-top {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 28px;
+    margin-bottom: 24px;
+  }
+
+  .photo-large {
+    width: 120px;
+    height: 150px;
+    background: linear-gradient(135deg, var(--rule) 0%, var(--tag-bg) 100%);
+    border: 2px solid var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-align: center;
+
+  }
+
+  .name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  .name span {
+    display: block;
+    font-size: 0.35em;
+    font-weight: 400;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--muted);
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .contacts a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .contacts a:hover { border-color: var(--accent); }
+
+  /* ── GOAL ── */
+  .goal {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 32px 40px;
+    margin-bottom: 56px;
+    position: relative;
+  }
+
+  .goal::before {
+    content: '⚖';
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    opacity: 0.12;
+  }
+
+  .goal-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--rule);
+    margin-bottom: 12px;
+  }
+
+  .goal p {
+    font-size: 1.1rem;
+    line-height: 1.65;
+    font-weight: 300;
+    max-width: 680px;
+  }
+
+  /* ── SECTION ── */
+  section {
+    margin-bottom: 56px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .section-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  /* ── CITATION LINK ── */
+  .cite {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    margin: 0 2px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 500;
+    vertical-align: super;
+    line-height: 1;
+    transition: background 0.2s;
+  }
+
+  .cite:hover {
+    background: var(--ink);
+  }
+
+  /* ── EDUCATION ── */
+  .edu-block {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 12px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .edu-degree {
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+
+  .edu-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  /* ── EXPERIENCE ── */
+  .job {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .job:last-child { border-bottom: none; }
+
+  .job-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .job-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .job-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .job ul {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+
+  .job ul li {
+    font-size: 0.92rem;
+    color: #3a3530;
+    padding: 4px 0 4px 20px;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .job ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 10px;
+  }
+
+  .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    background: var(--tag-bg);
+    padding: 5px 11px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── ACHIEVEMENTS ── */
+  .achievement {
+    background: var(--highlight);
+    border-left: 4px solid var(--accent);
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .achievement-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .achievement-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  .achievement-year {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--accent);
+    margin-top: 8px;
+  }
+
+  /* ── PROJECTS ── */
+  .project {
+    background: white;
+    border: 1px solid var(--rule);
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+
+  .project-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .project-tech {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+
+  .project-desc {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: #3a3530;
+    margin-bottom: 12px;
+  }
+
+  .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+  }
+
+  .project-links a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    transition: color 0.2s;
+  }
+
+  .project-links a:hover {
+    color: var(--ink);
+  }
+
+  /* ── SKILLS GRID ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+  }
+
+  .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: var(--tag-bg);
+    font-size: 0.9rem;
+  }
+
+  .skill-dot {
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── ABOUT ── */
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #2e2a24;
+    border-left: 3px solid var(--accent);
+    padding-left: 28px;
+    font-weight: 300;
+  }
+
+  /* ── REFERENCES / SOURCES ── */
+  .source-item {
+    background: white;
+    border: 2px solid var(--verify);
+    border-left: 6px solid var(--verify);
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    position: relative;
+    scroll-margin-top: 80px;
+  }
+
+  .source-number {
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    background: var(--verify);
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    font-weight: 600;
+  }
+
+  .source-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-bottom: 8px;
+    margin-top: 4px;
+  }
+
+  .source-desc {
+    font-size: 0.86rem;
+    line-height: 1.65;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .source-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--verify);
+    text-decoration: none;
+    border: 1px solid var(--verify);
+    padding: 6px 12px;
+    transition: all 0.2s;
+  }
+
+  .source-link:hover {
+    background: var(--verify);
+    color: white;
+  }
+
+  .source-link::before {
+    content: '→';
+  }
+
+  /* ── FILE ATTACHMENTS ── */
+  .file-attachment {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: var(--tag-bg);
+    border: 1px solid var(--rule);
+    margin-top: 8px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.2s;
+  }
+
+  .file-attachment:hover {
+    background: var(--rule);
+  }
+
+  .file-icon {
+    width: 32px;
+    height: 40px;
+    background: var(--accent);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  .file-info {
+    flex: 1;
+  }
+
+  .file-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  .file-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--muted);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+  }
+
+  .footer-note {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .footer-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 700px) {
+    .wrapper { padding: 32px 20px 60px; }
+    .header-top { grid-template-columns: 1fr; }
+    .job-top { grid-template-columns: 1fr; }
+    .project-header { flex-direction: column; gap: 8px; }
+    .source-links { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <div class="header-top">
+      <img class="photo-large" src="./danila_photo.jpg" alt="Фото"/>
+      <div>
+        <div class="name">
+          <span>Полное резюме</span>
+          Пачков Данила Сергеевич
+        </div>
+      </div>
+    </div>
+    
+    <div class="contacts">
+      <div>📍 г. Казань, Республика Татарстан</div>
+      <div>📞 +7 987 274 10 51</div>
+      <div>📧 <a href="mailto:inwell31@gmail.com">inwell31@gmail.com</a></div>
+      <div>🔗 <a href="https://github.com/b1gfarmer/" target="_blank">GitHub</a></div>
+    </div>
+  </header>
+
+  <!-- ЦЕЛЬ -->
+  <div class="goal">
+    <div class="goal-label">Цель</div>
+    <p>Рассматриваю работу в области юриспруденции как возможность применять аналитические навыки на практике и развиваться в сфере правоприменения.</p>
+  </div>
+
+  <!-- ОБРАЗОВАНИЕ -->
+  <section>
+    <div class="section-header">
+      <div class="section-title">Образование</div>
+      <div class="section-line"></div>
+      <div class="section-num">01</div>
+    </div>
+    <div class="edu-block">
+      <div>
+        <div class="edu-degree">Юриспруденция — Уголовное право<a href="#source-1" class="cite">1</a></div>
+        <div class="edu-sub">УНИВЕРСИТЕТ "СИНЕРГИЯ"</div>
+      </div>
+      <div class="edu-sub" style="text-align:right">Ожидаемая дата<br>окончания:<br>январь 2027</div>
+    </div>
+  </section>
+  <section>
+    <div class="edu-block">
+      <div>
+        <div class="edu-degree">Доп. образование — Frontend-разработка на React<a href="#source-2" class="cite">2</a></div>
+        <div class="edu-sub">ООО "НЕТОЛОГИЯ"</div>
+      </div>
+      <div class="edu-sub" style="text-align:right">Дата<br>окончания:<br>март 2026</div>
+    </div>
+  </section>
+  <section>
+    <div class="edu-block">
+      <div>
+        <div class="edu-degree">Доп. образование — Переводчик в сфере профессиональной коммуникации<a href="#source-3" class="cite">3</a></div>
+        <div class="edu-sub">Кафедра иностранных языков РХТУ имени Д.И. Менделеева</div>
+      </div>
+      <div class="edu-sub" style="text-align:right">Дата<br>окончания:<br>май 2022</div>
+    </div>
+  </section>
+
+  <!-- ОПЫТ -->
+  <section>
+    <div class="section-header">
+      <div class="section-title">Опыт работы</div>
+      <div class="section-line"></div>
+      <div class="section-num">02</div>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div class="job-title">Frontend-разработчик <span style="font-size:0.75rem;font-family:'IBM Plex Mono',monospace;font-weight:400;color:var(--muted)">(удалённо)</span></div>
+        <div class="job-date">2024 — настоящее время</div>
+      </div>
+      <ul>
+        <li>Разработка и поддержка веб-интерфейсов для корпоративных клиентов<a href="#source-4" class="cite">4</a></li>
+        <li>Работа с логикой и структурой данных, оптимизация пользовательского опыта</li>
+        <li>Внимательная проработка деталей и сценариев взаимодействия</li>
+        <li>Соблюдение сроков и требований заказчика в условиях агентской работы</li>
+      </ul>
+      <div class="skills-row">
+        <span class="tag">аналитическое мышление</span>
+        <span class="tag">внимание к деталям</span>
+        <span class="tag">дисциплина</span>
+        <span class="tag">работа с требованиями</span>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div class="job-title">Предприниматель <span style="font-size:0.75rem;font-family:'IBM Plex Mono',monospace;font-weight:400;color:var(--muted)">(e-commerce, Ozon)</span></div>
+        <div class="job-date">2021 — настоящее время</div>
+      </div>
+      <ul>
+        <li>Запуск и развитие трёх интернет-магазинов на платформе Ozon<a href="#source-5" class="cite">5</a></li>
+        <li>Глубокий анализ рынка и конкурентной среды для принятия стратегических решений</li>
+        <li>Работа с финансовыми показателями, управление оборотом и рентабельностью</li>
+        <li>Автоматизация бизнес-процессов: от складской логистики до клиентского сервиса</li>
+        <li>Запись обучающего курса совместно с университетом «Синергия» для поставщиков маркетплейсов<a href="#source-6" class="cite">6</a></li>
+      </ul>
+      <div class="skills-row">
+        <span class="tag">ответственность за результат</span>
+        <span class="tag">системное мышление</span>
+        <span class="tag">работа с информацией</span>
+        <span class="tag">управление рисками</span>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div class="job-title">Младший научный сотрудник <span style="font-size:0.75rem;font-family:'IBM Plex Mono',monospace;font-weight:400;color:var(--muted)">(университет)</span></div>
+        <div class="job-date">2020 — 2021</div>
+      </div>
+      <ul>
+        <li>Участие в исследовательских проектах по направлению капсулирования и терраформирования<a href="#source-7" class="cite">7</a></li>
+        <li>Работа с научной информацией, литературой и данными экспериментов</li>
+        <li>Подготовка аналитических материалов и промежуточных отчётов</li>
+        <li>Развитие навыков глубинного анализа и работы с источниками</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <div class="job-title">Аналитик <span style="font-size:0.75rem;font-family:'IBM Plex Mono',monospace;font-weight:400;color:var(--muted)">(проектная деятельность, фриланс)</span></div>
+        <div class="job-date">2019 — 2020</div>
+      </div>
+      <ul>
+        <li>Подготовка бизнес-планов и экономическое обоснование проектов</li>
+        <li>Маркетинговый и конкурентный анализ для стартапов и малого бизнеса</li>
+        <li>Структурирование и интерпретация больших объёмов данных</li>
+        <li>Выполнение более 20 проектов для клиентов из различных отраслей</li>
+      </ul>
+      <div class="skills-row">
+        <span class="tag">работа с большим объёмом данных</span>
+        <span class="tag">логика</span>
+        <span class="tag">аргументация выводов</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ДОСТИЖЕНИЯ -->
+  <section>
+    <div class="section-header">
+      <div class="section-title">Ключевые достижения</div>
+      <div class="section-line"></div>
+      <div class="section-num">03</div>
+    </div>
+
+    <div class="achievement">
+      <div class="achievement-title">Масштабирование бизнеса<a href="#source-5" class="cite">5</a></div>
+      <div class="achievement-desc">
+        Расширение e-commerce проекта: открытие двух дополнительных магазинов, автоматизация операционных процессов, выход на стабильные финансовые показатели. 
+      </div>
+      <div class="achievement-year">2023–2024</div>
+    </div>
+
+    <div class="achievement">
+      <div class="achievement-title">Обучающий курс для поставщиков Ozon<a href="#source-6" class="cite">6</a></div>
+      <div class="achievement-desc">
+        Разработка и запись обучающего курса совместно с университетом «Синергия». Курс охватывал стратегии выхода на маркетплейс, аналитику продаж и оптимизацию процессов. Стал одним из первопроходцев среди поставщиков на платформе Ozon.
+      </div>
+      <div class="achievement-year">2021–2022</div>
+    </div>
+
+    <div class="achievement">
+      <div class="achievement-title">Публикация научной статьи<a href="#source-7" class="cite">7</a></div>
+      <div class="achievement-desc">
+        Публикация научной работы по результатам исследований в области капсулирования и терраформирования. Статья демонстрирует способность систематизировать научную информацию, работать с источниками и формулировать аргументированные выводы.
+      </div>
+      <div class="achievement-year">2020–2021</div>
+    </div>
+  </section>
+
+  <!-- НАВЫКИ -->
+  <section>
+    <div class="section-header">
+      <div class="section-title">Профессиональные навыки</div>
+      <div class="section-line"></div>
+      <div class="section-num">04</div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-item"><span class="skill-dot"></span>Анализ и структурирование информации</div>
+      <div class="skill-item"><span class="skill-dot"></span>Работа с документами и данными</div>
+      <div class="skill-item"><span class="skill-dot"></span>Логическое и критическое мышление</div>
+      <div class="skill-item"><span class="skill-dot"></span>Внимательность к деталям</div>
+      <div class="skill-item"><span class="skill-dot"></span>Взвешенное принятие решений</div>
+      <div class="skill-item"><span class="skill-dot"></span>Стрессоустойчивость</div>
+      <div class="skill-item"><span class="skill-dot"></span>Системное мышление</div>
+      <div class="skill-item"><span class="skill-dot"></span>Самостоятельность и дисциплина</div>
+    </div>
+  </section>
+
+  <!-- О СЕБЕ -->
+  <section>
+    <div class="section-header">
+      <div class="section-title">О себе</div>
+      <div class="section-line"></div>
+      <div class="section-num">05</div>
+    </div>
+    <p class="about-text">
+      Студент юридического факультета, ориентированный на развитие в судебной системе.<br><br>
+      
+      Имею опыт работы с большим объёмом информации, умею анализировать данные, выявлять существенные обстоятельства и делать обоснованные выводы. Внимателен к деталям, ответственно подхожу к выполнению задач, соблюдаю сроки.<br><br>
+      
+      Способен сохранять концентрацию при длительной работе, спокойно действую в стрессовых ситуациях, не принимаю решений на эмоциях.<br><br>
+      
+      Рассматриваю работу в области юриспруденции как возможность применять аналитические навыки на практике и развиваться в сфере правоприменения.
+    </p>
+  </section>
+
+  <!-- ПОДТВЕРЖДЕНИЯ И ИСТОЧНИКИ -->
+  <section>
+    <div class="section-header">
+      <div class="section-title">Подтверждения и источники</div>
+      <div class="section-line"></div>
+      <div class="section-num">06</div>
+    </div>
+
+    <div class="source-item" id="source-1">
+      <div class="source-number">[1]</div>
+      <div class="source-title">Обучение в Университете Синергия — Юриспруденция</div>
+      <div class="source-desc">
+        Справка об обучении по направлению «Юриспруденция» с профилем «Уголовное право». Подтверждает текущий статус студента с ожидаемой датой окончания в январе 2027 года.
+      </div>
+      
+      <a href="#" class="file-attachment">
+        <div class="file-icon">PDF</div>
+        <div class="file-info">
+          <div class="file-name">university_certificate_law.pdf</div>
+          <div class="file-meta">Справка об обучении · 400 KB</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="source-item" id="source-2">
+      <div class="source-number">[2]</div>
+      <div class="source-title">Сертификат Нетология — Frontend-разработка на React</div>
+      <div class="source-desc">
+        Диплом о профессиональной переподготовке по программе «Frontend-разработка на React». Подтверждает освоение современного стека технологий веб-разработки.
+      </div>
+      
+      <a href="./docs/certificate.pdf" class="file-attachment">
+        <div class="file-icon">PDF</div>
+        <div class="file-info">
+          <div class="file-name">netology_react_certificate.pdf</div>
+          <div class="file-meta">Диплом · 550 KB</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="source-item" id="source-3">
+      <div class="source-number">[3]</div>
+      <div class="source-title">Диплом переводчика — РХТУ им. Д.И. Менделеева</div>
+      <div class="source-desc">
+        Диплом о дополнительном образовании «Переводчик в сфере профессиональной коммуникации» 
+        от кафедры иностранных языков РХТУ имени Д.И. Менделеева. Май 2022.
+        Выдача документа осуществляется вместе с основным дипломом о высшем образовании.
+      </div>
+      
+      <div style="padding: 12px 16px; background: #fff8e6; border: 1px dashed var(--accent); font-size: 0.85rem; color: var(--muted); font-family: 'IBM Plex Mono', monospace;">
+        📋 Диплом будет выдан вместе с основным документом об образовании (стандартная процедура вуза)
+      </div>
+    </div>
+
+    <div class="source-item" id="source-4">
+      <div class="source-number">[4]</div>
+      <div class="source-title">Портфолио веб-разработки</div>
+      <div class="source-desc">
+        Примеры реализованных проектов и интерфейсов. Включают корпоративные приложения, системы управления, сайты и пользовательские интерфейсы. Доступны скриншоты, описания технологий и результатов.
+      </div>
+      <div class="source-links">
+        <a href="https://youdo.com/u11571507" target="_blank" class="source-link">Онлайн портфолио</a>
+        <a href="https://github.com/b1gfarmer/" target="_blank" class="source-link">GitHub профиль</a>
+      </div>
+    </div>
+
+    <div class="source-item" id="source-5">
+      <div class="source-number">[5]</div>
+      <div class="source-title">Подтверждение деятельности на Ozon</div>
+      <div class="source-desc">
+        Действующие магазины на маркетплейсе Ozon, первый открытый магазин работает с 2021 года.
+      </div>
+      <div class="source-links">
+        <a href="https://www.ozon.ru/seller/hranika/" target="_blank" class="source-link">Магазин №1</a>
+        <a href="https://www.ozon.ru/seller/tochkaopory/" target="_blank" class="source-link">Магазин №2</a>
+        <a href="https://www.ozon.ru/seller/floorcontract/" target="_blank" class="source-link">Магазин №3</a>
+        <a href="https://www.ozon.ru/seller/shokolend-3419227/" target="_blank" class="source-link">Магазин №4</a>
+      </div>
+    </div>
+
+    <div class="source-item" id="source-6">
+      <div class="source-number">[6]</div>
+      <div class="source-title">Обучающий курс Ozon × Синергия</div>
+      <div class="source-desc">
+        Запись вебинара, материалы курса и сертификат о сотрудничестве с университетом «Синергия». Курс охватывает стратегии выхода на маркетплейс, аналитику и оптимизацию процессов.
+      </div>
+      <div class="source-links">
+        <a href="https://synergy.ru/lp/ozonmarket/" target="_blank" class="source-link">Страница с записью курса</a>
+      </div>
+    </div>
+
+    <div class="source-item" id="source-7">
+      <div class="source-number">[7]</div>
+      <div class="source-title">Научная статья и подтверждение деятельности МНС</div>
+      <div class="source-desc">
+        Публикация научной статьи по результатам исследований. 
+      </div>
+
+      <a href="./docs/sertificate_publication.jpg" class="file-attachment">
+        <div class="file-icon">JPG</div>
+        <div class="file-info">
+          <div class="file-name">sertificate_publication.jpg</div>
+          <div class="file-meta">Сертификат об авторстве публикации · 350 KB</div>
+        </div>
+      </a>
+
+      <a href="./docs/scientific_publication.pdf" class="file-attachment">
+        <div class="file-icon">PDF</div>
+        <div class="file-info">
+          <div class="file-name">scientific_publication.pdf</div>
+          <div class="file-meta">Научная статья · 890 KB</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="source-item" id="source-8">
+      <div class="source-number">[8]</div>
+      <div class="source-title">Письма и рекомендации</div>
+      <div class="source-desc">
+        Письма и рекомендации от декана факультета ЦиТХИн в научные журналы и конкурсы. Справка из университета о работе в должности младшего научного сотрудника (2020–2021).
+      </div>
+      
+      <a href="./docs/Pismo-rekomendatsia.doc" class="file-attachment">
+        <div class="file-icon">DOC</div>
+        <div class="file-info">
+          <div class="file-name">Pismo-rekomendatsia.doc</div>
+          <div class="file-meta">Письмо рекомендация от декана · 3.1 MB</div>
+        </div>
+      </a>
+      <a href="./docs/university_reference_letter.jpg" class="file-attachment">
+        <div class="file-icon">JPG</div>
+        <div class="file-info">
+          <div class="file-name">university_reference_letter.jpg</div>
+          <div class="file-meta">Справка из университета · 350 KB</div>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer-note">
+      Все материалы и ссылки в этом резюме актуальны и доступны для проверки.<br>
+      По запросу могу предоставить дополнительные подтверждения и рекомендации.
+    </div>
+    <div class="footer-name">ПАЧКОВ ДАНИЛА СЕРГЕЕВИЧ · г. Казань · 2026</div>
+  </footer>
+
+</div>
+</body>
+</html>
